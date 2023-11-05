@@ -1,0 +1,679 @@
+<!doctype html>
+<html>
+<head>
+<title>Travels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-image:url('blue.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:1800px;
+    }
+nav{
+padding:30px;
+
+
+}
+.nav-item{
+display:inline;
+padding:10px;
+}
+.subnav{
+position:absolute;
+right:50px;
+top:10px;
+}
+a{
+font-size:20px;
+text-decoration:none;
+padding:5px;
+}
+.dropdown-menu{
+position:absolute;
+z-index:10;
+left:270px;
+padding:10px;
+display:none;
+}
+.drop-item{
+list-style-type:none;
+}
+.dropdown:hover .dropdown-menu{
+display:block;
+}
+.button{
+border:1px solid blue;
+border-radius:10px;
+width:70px;
+height:40px;
+text-decoration:none;
+}
+.button:hover {
+background-color:rgb(152, 215, 240);
+}
+.logo{
+    position:absolute;
+    left:20px;
+    top:10px;
+}
+.h1{
+    color:#9f0c0c;
+    font-family: 'Dancing Script', cursive;
+    font-size:60px;
+    position:absolute;
+    left:230px;
+    top:-30px
+}
+.h2{
+    color: #9f0c0c;
+    font-family: 'Dancing Script', cursive;
+    font-size:40px;
+    position:absolute;
+    left:150px;
+    top:40px
+
+}
+.services{
+    position:absolute;
+    left:650px;
+    top:70px;
+    font-size:60px;
+    color:aquamarine;
+}
+
+.table{
+    position:absolute;
+    top:300px;
+    left:50px;
+}
+.luxury{
+    font-size: 40px;
+}
+.pxl{
+    position:absolute;
+    top:600px;
+}
+.hotels{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:300px;
+    left:30px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+}
+.hotels:hover {
+    background-color:rgb(77, 201, 207);
+}
+.a{
+    position:absolute;
+    left:100px;
+
+}
+.A{
+    position:absolute;
+    top:220px;
+    left:40px;
+}
+.aA{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.Ac{
+            position:absolute;
+            top:-150px;
+            left:500px;
+            color:red;
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            font-weight: 600;
+    
+}
+.hotels1{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:300px;
+    left:400px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+
+}
+.hotels1:hover {
+    background-color:rgb(77, 201, 207);
+}
+.b{
+    position:absolute;
+    left:100px;
+
+}
+.B{
+    position:absolute;
+    top:220px;
+    left:60px;
+}
+.bB{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.hotels3{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:300px;
+    left:770px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+
+}
+.hotels3:hover {
+    background-color:rgb(77, 201, 207);
+    
+}
+.c{
+    position:absolute;
+    left:100px;
+
+}
+.C{
+    position:absolute;
+    top:220px;
+    left:70px;
+}
+.cC{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.hotels4{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:300px;
+    left:1130px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+
+}
+.hotels4:hover {
+    background-color:rgb(77, 201, 207);
+}
+.d{
+    position:absolute;
+    left:70px;
+
+}
+.D{
+    position:absolute;
+    top:220px;
+    left:70px;
+}
+.dD{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.Ac1{
+            position:absolute;
+            top:-150px;
+            left:650px;
+            color:red;
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            font-weight: 600;
+    
+}
+.Ac2{
+            position:absolute;
+            top:-150px;
+            left:780px;
+            color:red;
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            font-weight: 600;
+    
+}
+.Ac3{
+            position:absolute;
+            top:650px;
+            left:510px;
+            color:red;
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            font-weight: 600;
+    
+}
+.hotels5{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:800px;
+    left:1130px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+
+}
+.hotels5:hover {
+    background-color:rgb(224, 103, 216);
+}
+.e{
+    position:absolute;
+    left:90px;
+
+}
+.E{
+    position:absolute;
+    top:220px;
+    left:70px;
+}
+.eE{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.hotels6{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:800px;
+    left:770px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+
+}
+.hotels6:hover {
+    background-color:rgb(224, 103, 216);
+    
+}
+.f{
+    position:absolute;
+    left:100px;
+
+}
+.F{
+    position:absolute;
+    top:220px;
+    left:70px;
+}
+.fF{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.hotels7{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:800px;
+    left:400px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+
+}
+.hotels7:hover {
+    background-color:rgb(224, 103, 216);
+}
+.g{
+    position:absolute;
+    left:90px;
+
+}
+.G{
+    position:absolute;
+    top:220px;
+    left:60px;
+}
+.gG{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.hotels8{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:800px;
+    left:30px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+}
+.hotels8:hover {
+    background-color:rgb(224, 103, 216);
+}
+.i{
+    position:absolute;
+    left:100px;
+
+}
+.I{
+    position:absolute;
+    top:220px;
+    left:40px;
+}
+.iI{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.trans{
+    position:absolute;
+    top:1140px;
+    left:650px;
+    color:red;
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            font-weight: 600;
+}
+.hotels9{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:1300px;
+    left:30px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+}
+.hotels9:hover {
+    background-color:rgb(103, 224, 151);
+}
+.j{
+    position:absolute;
+    left:100px;
+
+}
+.J{
+    position:absolute;
+    top:220px;
+    left:40px;
+}
+.jJ{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.hotels10{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:1300px;
+    left:400px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+
+}
+.hotels10:hover {
+    background-color:rgb(103, 224, 151);
+}
+.k{
+    position:absolute;
+    left:70px;
+
+}
+.K{
+    position:absolute;
+    top:220px;
+    left:60px;
+}
+.kK{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.hotels11{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:1300px;
+    left:770px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+
+}
+.hotels11:hover {
+    background-color:rgb(103, 224, 151);
+    
+}
+.l{
+    position:absolute;
+    left:120px;
+
+}
+.L{
+    position:absolute;
+    top:220px;
+    left:60px;
+}
+.lL{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.hotels12{
+    border:1px solid grey;
+    height:350px;
+    width:320px;
+    position:absolute;
+    top:1300px;
+    left:1130px;
+    font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+
+}
+.hotels12:hover {
+    background-color:rgb(103, 224, 151);
+}
+.m{
+    position:absolute;
+    left:120px;
+
+}
+.M{
+    position:absolute;
+    top:220px;
+    left:70px;
+}
+.mM{
+    position:absolute;
+            left:70px;
+            top:300px;
+           
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+            width:180px;
+}
+.calls{
+    position:absolute;
+    top:1670px;
+    color:red;
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+            font-weight: 600;
+
+}
+
+</style>
+</head>
+<body>
+<nav>
+<ul class="subnav">
+<li class="nav-item"><a href="index.html"><button class="button">Home</button></a></li>
+<li class="nav-item"><a href="About.html"><button class="button">About</button></a></li>
+<li class="nav-item dropdown"><a href="Tours.html"><button class="button">Tours</button></a>
+<ul class="dropdown-menu">
+<li class="drop-item"><a href="Jammukashmir.html">Jammu&Kashmir</a></li>
+<li class="drop-item"><a href="Ooty.html">Ooty</a></li>
+<li class="drop-item"><a href="Switzerland.html">Switzerland</a></li>
+<li class="drop-item"><a href="Kerala.html">Kerala</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="Services.html"><button class="button">Services</button></a></li>
+<li class="nav-item"><a href="Contact us.html"><button class="button">Contact</button></a></li>
+</ul>
+</nav>
+<img src="logo3.webp" height="100" width="100" class="logo">
+<h1 class="h1">KS Travels</h1>
+<h1 class="h2">Find your trips and have fun</h1>
+<div class="hotels">
+    <img src="viraj.webp" height="180" width="320" class="travs3">
+    <h1 class="a">Viraj Hotel</h1>
+    <h1 class="A">Rs:10,000 per day</h1>
+    <button class="aA"><a href="https://www.booking.com/searchresults.en-gb.html?aid=306395&label=jammu-aQ5JaJLoDHtMPvcmTGQfSAS392822512293%3Apl%3Ata%3Ap130%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1698815109%3Alp9062149%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=7390bcb97ec340f9e710166b46b75ec3&dest_id=-2098228&dest_type=city&highlighted_hotels=1342379&">Check Availibilty</a></button>
+<h1 class="Ac">Hotels</h1>
+<h1 class="Ac1">With</h1>
+<h1 class="Ac2"> AC</h1>
+</div>
+    <div class="hotels1">
+        <img src="bloom.webp" height="180" width="320" class="travs3">
+        <h1 class="b">Bloom Hotel</h1>
+        <h1 class="B">Rs:12,000 per day</h1>
+        <button class="bB"><a href="https://www.booking.com/searchresults.en-gb.html?aid=306395&label=jammu-aQ5JaJLoDHtMPvcmTGQfSAS392822512293%3Apl%3Ata%3Ap130%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1698815109%3Alp9062149%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=7390bcb97ec340f9e710166b46b75ec3&dest_id=-2098228&dest_type=city&highlighted_hotels=1342379&">Check Availibilty</a></button>
+</div>
+    <div class="hotels3">
+        <img src="Radission jammu.webp" height="180" width="320" class="travs3">
+        <h1 class="c">Radison Hotel</h1>
+        <h1 class="C">Rs:5,000 per day</h1>
+        <button class="cC"><a href="https://www.booking.com/searchresults.en-gb.html?aid=306395&label=jammu-aQ5JaJLoDHtMPvcmTGQfSAS392822512293%3Apl%3Ata%3Ap130%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1698815109%3Alp9062149%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=7390bcb97ec340f9e710166b46b75ec3&dest_id=-2098228&dest_type=city&highlighted_hotels=1342379&">Check Availibilty</a></button>
+</div>
+<div class="hotels4">
+    <img src="Inn Riviera.webp" height="180" width="320" class="travs3">
+    <h1 class="d">Inn Riviera Hotel</h1>
+    <h1 class="D">Rs:15,000 per day</h1>
+    <button class="dD"><a href="https://www.booking.com/searchresults.en-gb.html?aid=306395&label=jammu-aQ5JaJLoDHtMPvcmTGQfSAS392822512293%3Apl%3Ata%3Ap130%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1698815109%3Alp9062149%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=7390bcb97ec340f9e710166b46b75ec3&dest_id=-2098228&dest_type=city&highlighted_hotels=1342379&">Check Availibilty</a></button>
+</div>
+<h1 class="Ac3">Hotels With Non-AC</h1>
+<div class="hotels5">
+    <img src="non ac1.webp" height="180" width="320" class="travs3">
+    <h1 class="e">Shivaliks Hotel</h1>
+    <h1 class="E">Rs:5,000 per day</h1>
+    <button class="eE"><a href="https://www.booking.com/searchresults.en-gb.html?aid=306395&label=jammu-aQ5JaJLoDHtMPvcmTGQfSAS392822512293%3Apl%3Ata%3Ap130%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1698815109%3Alp9062149%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=7390bcb97ec340f9e710166b46b75ec3&dest_id=-2098228&dest_type=city&highlighted_hotels=1342379&">Check Availibilty</a></button>
+</div>
+<div class="hotels6">
+    <img src="non ac2.webp" height="180" width="320" class="travs3">
+    <h1 class="f">Shivaliks Hotel</h1>
+    <h1 class="F">Rs:6,000 per day</h1>
+    <button class="fF"><a href="https://www.booking.com/searchresults.en-gb.html?aid=306395&label=jammu-aQ5JaJLoDHtMPvcmTGQfSAS392822512293%3Apl%3Ata%3Ap130%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1698815109%3Alp9062149%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=7390bcb97ec340f9e710166b46b75ec3&dest_id=-2098228&dest_type=city&highlighted_hotels=1342379&">Check Availibilty</a></button>
+</div>
+<div class="hotels7">
+    <img src="non ac3.webp" height="180" width="320" class="travs3">
+    <h1 class="g">Colonels Hotel</h1>
+    <h1 class="G">Rs:7,000 per day</h1>
+    <button class="gG"><a href="https://www.booking.com/searchresults.en-gb.html?aid=306395&label=jammu-aQ5JaJLoDHtMPvcmTGQfSAS392822512293%3Apl%3Ata%3Ap130%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1698815109%3Alp9062149%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=7390bcb97ec340f9e710166b46b75ec3&dest_id=-2098228&dest_type=city&highlighted_hotels=1342379&">Check Availibilty</a></button>
+</div>
+<div class="hotels8">
+    <img src="non ac4.webp" height="180" width="320" class="travs3">
+    <h1 class="i">Colonels Hotel</h1>
+    <h1 class="I">Rs:3,000 per day</h1>
+    <button class="iI"><a href="https://www.booking.com/searchresults.en-gb.html?aid=306395&label=jammu-aQ5JaJLoDHtMPvcmTGQfSAS392822512293%3Apl%3Ata%3Ap130%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1698815109%3Alp9062149%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=7390bcb97ec340f9e710166b46b75ec3&dest_id=-2098228&dest_type=city&highlighted_hotels=1342379&">Check Availibilty</a></button>
+</div>
+<h1 class="trans">Transport</h1>
+<div class="hotels9">
+    <img src="trans1.webp" height="180" width="320" class="travs3">
+    <h1 class="j">Indigo plane</h1>
+    <h1 class="J">Rs:8,000 per head</h1>
+    <button class="jJ"><a href="https://www.ixigo.com/?utm_source=Google_Search&utm_medium=paid_search_google&utm_campaign=Generic_Search_Desktop_Sept&gclid=EAIaIQobChMI5oHotd6qggMVNB57Bx1zmQE0EAAYASAAEgJSs_D_BwE">Tickets</a></button>
+</div>
+<div class="hotels10">
+    <img src="trans2.jpeg" height="180" width="320" class="travs3">
+    <h1 class="k">Venkatradi Express</h1>
+    <h1 class="K">Rs:3,000 per head</h1>
+    <button class="kK"><a href="https://www.ixigo.com/?utm_source=Google_Search&utm_medium=paid_search_google&utm_campaign=Generic_Search_Desktop_Sept&gclid=EAIaIQobChMI5oHotd6qggMVNB57Bx1zmQE0EAAYASAAEgJSs_D_BwE">Tickets</a></button>
+</div>
+<div class="hotels11">
+    <img src="trans4.jpeg" height="180" width="320" class="travs3">
+    <h1 class="l">MMTs</h1>
+    <h1 class="L">Rs:1500 per head</h1>
+    <button class="lL"><a href="https://www.ixigo.com/?utm_source=Google_Search&utm_medium=paid_search_google&utm_campaign=Generic_Search_Desktop_Sept&gclid=EAIaIQobChMI5oHotd6qggMVNB57Bx1zmQE0EAAYASAAEgJSs_D_BwE">Tickets</a></button>
+</div>
+<div class="hotels12">
+    <img src="trans3.jpeg" height="180" width="320" class="travs3">
+    <h1 class="m">Red Bus</h1>
+    <h1 class="M">Rs:1500 per head</h1>
+    <button class="mM"><a href="https://www.ixigo.com/?utm_source=Google_Search&utm_medium=paid_search_google&utm_campaign=Generic_Search_Desktop_Sept&gclid=EAIaIQobChMI5oHotd6qggMVNB57Bx1zmQE0EAAYASAAEgJSs_D_BwE">Tickets</a></button>
+</div>
+<h1 class="calls">Contact : 040-32456432 / 9848022338</h1>
+</body>
+</html>

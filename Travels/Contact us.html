@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<title>Travels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body{
+        background-image:url('blue.jpg');
+        background-size: cover;
+        height:1300px;
+    }
+nav{
+padding:30px;
+
+}
+.nav-item{
+display:inline;
+padding:10px;
+}
+.subnav{
+position:absolute;
+right:50px;
+top:10px;
+}
+a{
+font-size:20px;
+text-decoration:none;
+padding:5px;
+}
+.dropdown-menu{
+position:absolute;
+z-index:10;
+left:270px;
+padding:10px;
+display:none;
+}
+.drop-item{
+list-style-type:none;
+}
+.dropdown:hover .dropdown-menu{
+display:block;
+}
+.button{
+border:1px solid blue;
+border-radius:10px;
+width:70px;
+height:40px;
+text-decoration:none;
+}
+.button:hover {
+background-color:rgb(152, 215, 240);
+}
+.logo{
+    position:absolute;
+    left:20px;
+    top:10px;
+}
+.h1{
+    color: #9f0c0c;
+    font-family: 'Dancing Script', cursive;
+    font-size:60px;
+    position:absolute;
+    left:230px;
+    top:-30px
+}
+.h2{
+    color: #9f0c0c;
+    font-family: 'Dancing Script', cursive;
+    font-size:40px;
+    position:absolute;
+    left:150px;
+    top:40px
+
+}
+.form{
+    position:absolute;
+    top:250px;
+    left:520px;
+}
+.names{
+    font-size:22px;
+    font-family:'Dancing Script', cursive;
+    font-weight:600;
+}
+.get{
+    position:absolute;
+    top:130px;
+    left:520px;
+    font-size:45px;
+    font-family:'Dancing Script', cursive;
+    font-weight:600;
+}
+.location{
+border:1px solid rgb(14, 14, 14);
+width:300px;
+height:100px;
+padding:15px;
+border-radius:8px;
+position:absolute;
+top:250px;
+left:10px;
+font-size:22px;
+font-family:'Dancing Script', cursive;
+    font-weight:600;
+}
+.location:hover{
+    background-color: rgb(244, 227, 99);
+}
+.fa-location-dot{
+position:absolute;
+left:150px;
+top:8px;
+font-size:40px;
+}
+.phone{
+border:1px solid rgb(0, 0, 0);
+width:300px;
+height:100px;
+padding:15px;
+border-radius:8px;
+position:absolute;
+top:250px;
+left:370px;
+font-size:22px;
+font-family:'Dancing Script', cursive;
+    font-weight:600;
+}
+.phone:hover{
+    background-color: rgb(244, 227, 99);
+}
+.fa-square-phone{
+position:absolute;
+top:7px;
+left:150px;
+font-size:40px;
+}
+.email{
+border:1px solid rgb(17, 15, 15);
+width:300px;
+height:100px;
+padding:15px;
+border-radius:8px;
+position:absolute;
+top:250px;
+left:740px;
+font-size:22px;
+font-family:'Dancing Script', cursive;
+    font-weight:600;
+}
+.email:hover{
+    background-color:rgb(244, 227, 99);
+}
+.fa-envelope-open-text{
+position:absolute;
+top:7px;
+left:150px;
+font-size:40px;
+}
+.time{
+border:1px solid rgb(18, 18, 18);
+width:300px;
+padding:15px;
+border-radius:8px;
+position:absolute;
+top:250px;
+left:1100px;
+font-size:22px;
+font-family:'Dancing Script', cursive;
+    font-weight:600;
+}
+.time:hover{
+    background-color:rgb(244, 227, 99);
+}
+.fa-clock{
+position:absolute;
+top:7px;
+left:150px;
+font-size:40px;
+}
+.frame{
+position:absolute;
+top:800px;
+left:100px;
+
+}
+.dabba{
+    position:absolute;
+    top:350px;
+}
+
+</style>
+</head>
+<body>
+<nav>
+<ul class="subnav">
+<li class="nav-item"><a href="index.html"><button class="button">Home</button></a></li>
+<li class="nav-item"><a href="About.html"><button class="button">About</button></a></li>
+<li class="nav-item dropdown"><a href="Tours.html"><button class="button">Tours</button></a>
+<ul class="dropdown-menu">
+<li class="drop-item"><a href="Jammukashmir.html">Jammu&Kashmir</a></li>
+<li class="drop-item"><a href="Ooty.html">Ooty</a></li>
+<li class="drop-item"><a href="Switzerland.html">Switzerland</a></li>
+<li class="drop-item"><a href="Kerala.html">Kerala</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="Services.html"><button class="button">Services</button></a></li>
+<li class="nav-item"><a href="Contact us.html"><button class="button">Contact</button></a></li>
+</ul>
+</nav>
+<img src="logo3.webp" height="100" width="100" class="logo">
+<h1 class="h1">KS Travels</h1>
+<h1 class="h2">Find your trips and have fun</h1>
+<h1 class="get">Get Connect with our Tour Experts</h1>
+<div class="form">
+    <form class="names">
+        <table>
+        <tr>
+        <td>
+        <label>Enter Full Name<font color="red">*</font></label>
+        </td>
+        <td>
+        <input type="text" placeholder="username" required pattern=[a-zA-Z]{5,10}">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label>Email<font color="red">*</font></label>
+        </td>
+        <td>
+        <input type="email" placeholder="email" required>
+        </td>
+        </tr>
+        <td>
+        <label>Enter Phone Number</label>
+        </td>
+        <td>
+        <input type="number" placeholder="Phone Number" required pattern="[0-9]{ ,10}">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label>Date of Travel</label>
+        </td>
+        <td>
+        <input type="date">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label> Gender </label>
+        </td>
+        <td>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Prefer not to say
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label>Select your Tour</label>
+        </td>
+        <td>
+        <select>
+        <option>Jammukashmir</option>
+        <option>Ooty</option>
+        <option>Switzerland</option>
+        <option>Kerala</option>
+        </select>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label>Comments</label>
+        </td>
+        <td>
+        <input type="textarea" cols="40" rows="25">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <input type="checkbox" >Agree to the terms and conditions
+        </td>
+        </tr>
+        <tr>
+        <td class="submit">
+        <input type="Submit">
+        </td>
+        </table>
+</div>
+<div class="dabba">
+    <h1 class="location"><i class="fa-solid fa-location-dot"></i><br>Our Location:<br>KS Travels<br>opposite paradise,Begumpet</h1>
+    <h1 class="phone"><i class="fa-solid fa-square-phone"></i><br>Phone:<br>7993280702</h1>
+    <h1 class="email"><i class="fa-solid fa-envelope-open-text"></i><br>Email:<br>kstravels@gmail.com</h1>
+    <h1 class="time"><i class="fa-solid fa-clock"></i><br>Opening hours:<br>Sat-Sun: 9:00 AM to 10:00 PM<br>Mon-Fri: 12:00 PM to 10:00 PM<br></h1>
+    </div>
+    <br><br><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3839791983605!2d78.45776037516615!3d17.44132643345506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90bca1d9c981%3A0x94dad8ee07cdc609!2sParadise%20Biryani%20%7C%20Begumpet!5e0!3m2!1sen!2sin!4v1698573707332!5m2!1sen!2sin" width="1300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="frame"></iframe>
+    
+    
+
+
+</body>
+</html>

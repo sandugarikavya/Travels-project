@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Travels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        body {
+            background-image: url('blue.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height:1400px;
+        }
+
+        nav {
+            padding: 30px;
+
+        }
+
+        .nav-item {
+            display: inline;
+            padding: 10px;
+        }
+
+        .subnav {
+            position: absolute;
+            right: 50px;
+            top: 10px;
+        }
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            z-index: 10;
+            left: 270px;
+            padding: 10px;
+            display: none;
+        }
+
+        .drop-item {
+            list-style-type: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .button {
+            border: 1px solid blue;
+            border-radius: 10px;
+            width: 70px;
+            height: 40px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: rgb(152, 215, 240);
+        }
+
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+
+        .h1 {
+            color:#9f0c0c;
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            position: absolute;
+            left: 230px;
+            top: -30px
+        }
+
+        .h2 {
+            color:#9f0c0c;
+            font-family: 'Dancing Script', cursive;
+            font-size: 40px;
+            position: absolute;
+            left: 150px;
+            top: 40px
+        }
+        .para{
+            position:absolute;
+            left:100px;
+            top:300px;
+            border:1px solid none;
+            width:650px;
+            height:300px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 21px;
+            font-weight:600;
+            color:black;
+        }
+        .img1{
+            position:absolute;
+            top:150px;
+            left:70px;
+        }
+        .box{
+            border:1px solid none;
+            position:absolute;
+            left:90px;
+            top:600px;
+            right:10px;
+            width:500px;
+            height:200px;
+        }
+        .top{
+            font-size: 25px;
+            font-family: 'Dancing Script', cursive;
+            font-weight:600;
+            color:rgb(14, 14, 14);
+            position:absolute;
+            left:100px;
+            top:-10px;
+
+        }
+        .down{
+            font-size:20px;
+            font-family: 'Dancing Script', cursive;
+            font-weight:600;
+            color:rgb(16, 14, 16);
+            position:absolute;
+            top:30px;
+            left:100px;
+        }
+        .input{
+            position:absolute;
+            top:120px;
+            left:100px;
+            width:250px;
+        }
+        .Subcribe{
+            position:absolute;
+            top:120px;
+            left:400px;
+            width:100px;
+            color:white;
+            background-color: rgb(232, 139, 77);
+            border:1px solid white;
+            border-radius:9px;
+            font-size:10px;
+        }
+        .email{
+            position:absolute;
+            left:10px;
+            top:10px;
+        }
+        .para2{
+            border:1px solid none;
+            width:500px;
+            height:100px;
+            position:absolute;
+            left:100px;
+            top:460px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 21px;
+            font-weight: 600;
+            color:rgb(11, 10, 11);
+        }
+        .aero{
+            position:absolute;
+            top:250px;
+            left:800px;
+        }
+        .animate_animated{
+            position:absolute;
+            top:150px;
+            left:370px;
+            color:red;
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            font-weight: 600;
+            border-radius:10px;
+
+        }
+        .tour1{
+            border:1px solid grey;
+            height:330px;
+            width:300px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+            position:absolute;
+            top:900px;
+            left:50px;
+
+        }
+        .tour1:hover {
+            background-color: rgb(205, 205, 101);
+            
+        }
+        .a{
+            position:absolute;
+            left:30px;
+            top:150px;
+        }
+        .A{
+            position:absolute;
+            left:70px;
+            top:200px;
+        }
+        .aA{
+            position:absolute;
+            left:90px;
+            top:280px;
+            color:white;
+            background-color: orangered;
+            border-radius: 10px;
+            height:30px;
+        }
+        .tour2{
+            border:1px solid grey;
+            height:330px;
+            width:300px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+            position:absolute;
+            top:900px;
+            left:430px;
+
+        }
+        .tour2:hover {
+            background-color: rgb(205, 205, 101);
+            
+        }
+        .b{
+            position:absolute;
+            top:150px;
+            left:50px;
+        }
+        .B{
+            position:absolute;
+            top:200px;
+            left:70px;
+        }
+        .bB{
+            position:absolute;
+            left:90px;
+            top:280px;
+            color:white;
+            background-color: orangered;
+            border-radius: 10px;
+            height: 30px;
+        }
+        .tour3{
+            border:1px solid grey;
+            height:330px;
+            width:300px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+            position:absolute;
+            top:900px;
+            left:800px;
+
+        }
+        .tour3:hover {
+            background-color: rgb(205, 205, 101);
+            
+        }
+        .c{
+            position:absolute;
+            left:15px;
+            top:150px;
+
+        }
+        .C{
+            position:absolute;
+            left:80px;
+            top:200px;
+        }
+        .Pack{
+            position:absolute;
+            top:750px;
+            left:630px;
+            color:red;
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            font-weight: 600;
+        }
+        .tour4{
+            border:1px solid grey;
+            height:330px;
+            width:300px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 15px;
+            font-weight: 600;
+            position:absolute;
+            top:900px;
+            left:1150px;
+        }
+        .tour4:hover {
+            background-color: rgb(205, 205, 101);
+            
+        }
+        .d{
+            position:absolute;
+            top:150px;
+            left:20px;
+        }
+        .D{
+            position:absolute;
+            top:200px;
+            left:70px;
+        }
+        .bB{
+            position:absolute;
+            left:90px;
+            top:280px;
+            color:white;
+            background-color: orangered;
+            border-radius: 10px;
+            height: 30px;
+        }
+       
+    
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="subnav">
+            <li class="nav-item"><a href="index.html"><button class="button">Home</button></a></li>
+            <li class="nav-item"><a href="About.html"><button class="button">About</button></a></li>
+            <li class="nav-item dropdown"><a href="Tours.html"><button class="button">Tours</button></a>
+                <ul class="dropdown-menu">
+                    <li class="drop-item"><a href="Jammukashmir.html">Jammu&Kashmir</a></li>
+                    <li class="drop-item"><a href="Ooty.html">Ooty</a></li>
+                    <li class="drop-item"><a href="Switzerland.html">Switzerland</a></li>
+                    <li class="drop-item"><a href="Kerala.html">Kerala</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="Services.html"><button class="button">Services</button></a></li>
+            <li class="nav-item"><a href="Contact us.html"><button class="button">Contact</button></a></li>
+        </ul>
+    </nav>
+    <img src="logo3.webp" height="100" width="100" class="logo">
+    <h1 class="h1">KS Travels</h1>
+    <h1 class="h2">Find your trips and have fun</h1>
+    <p class="para">“Travel is the main thing you purchase that makes you more extravagant”. We, at ‘Organization Name’, swear by
+        this and put stock in satisfying travel dreams that make you perpetually rich constantly.
+
+        We have been moving excellent encounters for a considerable length of time through our cutting-edge planned
+        occasion bundles and other fundamental travel administrations. We rouse our clients to carry on with a rich
+        life, brimming with extraordinary travel encounters.</p>
+
+<div class="box">
+    <img src="email2.png" height="80" width="80" class="email">
+    <h1 class="top">Subcribe to KS travels!</h1>
+    <h1 class="down">Get updates on the latest posts and more from<br> the KStravels straight to your inbox.</h1>
+    <input type="email" placeholder="your email" class="input">
+    <button class="Subcribe"><a href="https://www.goindigo.in/?cid=Display|Affiliate|LF|LA6|1243500||924f1d2ddaed85144426eb76990c81a2"><font size="2">SUBSCRIBE</font size></a></button>
+</div>
+<p class="para2">Through our expeectionally curated occasion bundles,we need to take you on adventure where you personally enjoy the stunning
+     magnifience of places.We need you to observe sensational scences that are a long way past your creative ability.</p>
+<div>
+    <h1 class="animate__animated animate__backInRight"><img src="friends.webp" height="400px" width="650px" class="aero"></h1>
+</div>
+
+   <h1 class="animate_animated animate__bounce">Plan your dream holiday with us!</h1>
+
+    <div class="tour1">
+        <img src="bern sw.webp" height="160" width="300" class="travs1">
+        <h1 class="a">Jammu&Kasmir+OOty</h1>
+        <h1 class="A">Rs:20,000/-</h1>
+        <button class="aA">Send Enquiry</button>
+    </div>
+    <div class="tour2">
+        <img src="travs4.webp" height="160" width="300" class="travs2">
+        <h1 class="b">Kerala+Switzerland</h1>
+        <h1 class="B">Rs:25,000/-</h1>
+        <button class="bB">Send Enquiry</button>
+    </div>
+    <div class="tour3">
+        <img src="sw.jpg" height="160" width="300" class="travs3">
+        <h1 class="c">Kerala+Switzerland+Ooty</h1>
+        <h1 class="C">Rs:35,000/-</h1>
+        <button class="bB">Send Enquiry</button>
+    </div>
+    <h1 class="Pack">Packages</h1>
+    <div class="tour4">
+        <img src="jungfraujoch sw.jpg" height="160" width="300" class="travs3">
+        <h1 class="d">Kerala+Jammu&Kashmir</h1>
+        <h1 class="D">Rs:25,000/-</h1>
+        <button class="bB">Send Enquiry</button>
+    </div>
+
+</body>
+</html>

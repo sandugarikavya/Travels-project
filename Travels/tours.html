@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+<title>Travels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+<style>
+    body{
+        background-image:url('blue.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:2500px;
+    }
+nav{
+padding:30px;
+
+}
+.nav-item{
+display:inline;
+padding:10px;
+}
+.subnav{
+position:absolute;
+right:50px;
+top:10px;
+}
+a{
+font-size:20px;
+text-decoration:none;
+padding:5px;
+}
+.dropdown-menu{
+position:absolute;
+z-index:10;
+left:270px;
+padding:10px;
+display:none;
+}
+.drop-item{
+list-style-type:none;
+}
+.dropdown:hover .dropdown-menu{
+display:block;
+}
+.button{
+border:1px solid blue;
+border-radius:10px;
+width:70px;
+height:40px;
+text-decoration:none;
+}
+.button:hover {
+background-color:rgb(152, 215, 240);
+}
+.logo{
+    position:absolute;
+    left:20px;
+    top:10px;
+}
+.h1{
+    color: #9f0c0c;
+    font-family: 'Dancing Script', cursive;
+    font-size:60px;
+    position:absolute;
+    left:230px;
+    top:-30px
+}
+.h2{
+    color: #9f0c0c;
+    font-family: 'Dancing Script', cursive;
+    font-size:40px;
+    position:absolute;
+    left:150px;
+    top:40px
+
+}
+.animate{
+    height:400px;
+    width:700px;
+    background-image: url("ladakh.jpeg");
+    border:1px solid white;
+    border-radius:10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name:drf;
+    animation-duration:20s;
+    
+    animation-iteration-count: infinite;
+    position:absolute;
+    left:50px;
+    top:150px;
+}
+@keyframes drf{
+    0%{background-image: url("ladakh.jpeg");}
+    25%{background-image: url("Magnetic hill.jpeg");}
+    50%{background-image: url("nubra valley.jpeg");}
+    75%{background-image: url("tso morriri lake.jpeg");}
+}
+.jammuandkashmir{
+    position:absolute;
+    top:210px;
+    left:800px;
+    border:1px solid none;
+    height:800px;
+    width:600px;
+    font-family: 'Dancing Script', cursive;
+    font-size:23px;
+    font-weight: 600;
+   
+}
+.mir1{
+    position:absolute;
+    top:140px;
+    left:850px;
+    color:red;
+    font-family: 'Dancing Script', cursive;
+    font-size:60px;
+    font-weight: 600;
+}
+.mir:hover {
+    text-decoration:underline;
+}
+.ooty{
+    height:400px;
+    width:700px;
+    background-image: url("ooty2.jpeg");
+    border:1px solid white;
+    border-radius:10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name:key;
+    animation-duration:20s;
+    
+    animation-iteration-count: infinite;
+    position:absolute;
+    left:760px;
+    top:600px;
+}
+@keyframes key{
+    0%{background-image: url("ooty2.jpeg");}
+    25%{background-image: url("deer1.jpeg");}
+    50%{background-image: url("dobba.jpeg");}
+    75%{background-image: url("kalhati falls ot.jpg");}
+}
+.ootypara{
+    position:absolute;
+    top:30px;
+    left:-700px;
+    border:1px solid none;
+    height:800px;
+    width:600px;
+    font-family: 'Dancing Script', cursive;
+    font-size:23px;
+    font-weight: 600;
+   
+}
+.mir2{
+    position:absolute;
+    top:-15px;
+    left:-500px;
+    color:red;
+    font-family: 'Dancing Script', cursive;
+    font-size:60px;
+    font-weight: 600;
+}
+.switz{
+    height:400px;
+    width:700px;
+    background-image: url("geneva.jpeg");
+    border:1px solid white;
+    border-radius:10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: kavs;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position:absolute;
+    left:50px;
+    top:1070px;
+
+}
+@keyframes kavs{
+    0%{background-image: url("geneva.jpeg");}
+    25%{background-image: url("zermatte.jpeg");}
+    50%{background-image: url("lucerne.jpeg");}
+    75%{background-image: url("zuriche.jpeg");}
+}
+.hill{
+    position:absolute;
+    left:800px;
+    top:1100px;
+    border:1px solid none;
+    height:800px;
+    width:600px;
+    font-family: 'Dancing Script', cursive;
+    font-size:23px;
+    font-weight: 600;
+}
+.mir3{
+    position:absolute;
+    top:1040px;
+    left:900px;
+    color:red;
+    font-family: 'Dancing Script', cursive;
+    font-size:60px;
+    font-weight: 600;
+}
+.rala{
+    height:400px;
+    width:700px;
+    background-image: url("munnar.jpeg");
+    border:1px solid white;
+    border-radius:10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: wow;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position:absolute;
+    left:750px;
+    top:1550px;
+
+}
+@keyframes wow{
+    0%{background-image: url("munnar.jpeg");}
+    25%{background-image: url("allepey1.jpeg");}
+    50%{background-image: url("allepey.jpg");}
+    75%{background-image: url("kozhikode.jpeg");}
+}
+.ammu{
+    position:absolute;
+    left:100px;
+    top:1590px;
+    border:1px solid none;
+    height:800px;
+    width:600px;
+    font-family: 'Dancing Script', cursive;
+    font-size:23px;
+    font-weight: 600;
+}
+.mir4{
+    position:absolute;
+    top:1520px;
+    left:300px;
+    color:red;
+    font-family: 'Dancing Script', cursive;
+    font-size:60px;
+    font-weight: 600;
+}
+.test{
+    position:absolute;
+    top:2100px;
+
+}
+.mp{
+    position:absolute;
+    top:2100px;
+    left:280px;
+    width:1100px;
+   
+}
+.rem{
+    position:absolute;
+    top:1960px;
+    left:180px;
+    color:red;
+    font-family: 'Dancing Script', cursive;
+    font-size:50px;
+    font-weight: 600;
+}
+</style>
+</head>
+<body>
+<nav>
+<ul class="subnav">
+<li class="nav-item"><a href="index.html"><button class="button">Home</button></a></li>
+<li class="nav-item"><a href="About.html"><button class="button">About</button></a></li>
+<li class="nav-item dropdown"><a href="Tours.html"><button class="button">Tours</button></a>
+<ul class="dropdown-menu">
+<li class="drop-item"><a href="Jammukashmir.html">Jammu&Kashmir</a></li>
+<li class="drop-item"><a href="Ooty.html">Ooty</a></li>
+<li class="drop-item"><a href="Switzerland.html">Switzerland</a></li>
+<li class="drop-item"><a href="Kerala.html">Kerala</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="Services.html"><button class="button">Services</button></a></li>
+<li class="nav-item"><a href="Contact us.html"><button class="button">Contact</button></a></li>
+</ul>
+</nav>
+<img src="logo3.webp" height="100" width="100" class="logo">
+<h1 class="h1">KS Travels</h1>
+<h1 class="h2">Find your trips and have fun</h1>
+<div class="animate">
+
+</div>
+<div >
+    <p class="jammuandkashmir">The valleys of Jammu and Kashmir include the Kashmir Valley, Chenab Valley, Sindh Valley, and Lidder Valley. Srinagar, with its renowned Dal Lake and Mughal Gardens, Gulmarg, Pahalgam, Bhaderwah, Patnitop, and Jammu are all popular tourist destinations in Jammu and Kashmir. Thousands of Hindu pilgrims visit the sacred temples of Vaishno Devi and Amarnath each year, which has a substantial impact on the state's economy.
+
+        Kashmir Valley is one of India's most popular tourist destinations. Gulmarg, one of India's most famous ski resort locations, also has the world's highest green golf course. Tourism has fallen during the last three decades.
+        
+        There are also flower gardens and apple orchards in Jammu and Kashmir. Tourists come here for the handicrafts and Kashmiri shawls.</p>
+        <a href="Jammukashmir.html" target="_blank" title="Jammukasmir" class="mir1">Jammu&Kashmir</a>
+       
+    </div>
+<div class="ooty">
+    <p class="ootypara">
+        Ooty is a scenic hill town in southern India. It is surrounded by the Nilgiri Hills and is popularly known as the Queen of Hills. But when is the best time to visit Ooty?
+
+Climate (if any) is the only serious deterrent which might spoil your travel plans to Ooty. But regarding climate too, Ooty has something different to offer all throughout the year. The summer is perhaps the best time to visit the place, if you are planning to visit all the tourist spots, including some adventurous treks and hand gliding.
+
+Be it summer, monsoon or winter, Ooty will enthral you with the natural grandeur of the mountains and the hospitality of its residents. Being a cherished tourist destination for many, Ooty has got excellent connectivity with the cities and towns in the neighbourhood. And hire one of the best car rental companies in Ooty to ensure a comfortable ride with in Ooty.
+    </p>
+<a href="Ooty.html" target="_blank" title="Ooty" class="mir2">Ooty</a>
+</div>
+<div class="switz">
+
+</div>
+<div class="switz1">
+    <p class="hill">
+        Switzerland, officially the Swiss Confederation, is a landlocked country located at the confluence of Western, Central and Southern Europe.[e][13] It is bordered by Italy to the south, France to the west, Germany to the north and Austria and Liechtenstein to the east. Switzerland is geographically divided among the Swiss Plateau, the Alps and the Jura; the Alps occupy the greater part of the territory, whereas most of the country's population of 9 million are concentrated on the plateau, which hosts the largest cities and economic centres, including Zürich, Geneva and Basel.[14]
+        The oldest traces of hominid existence in Switzerland date to about 150,000 years ago.[34] The oldest known farming settlements in Switzerland, which were found at Gächlingen, date to around 5300 BC.
+
+    </p>
+    <a href="Switzerland.html" target="_blank" title="Switzerland" class="mir3">Switzerland</a>
+</div>
+<div class="rala">
+
+</div>
+<div class="kutti">
+    <p class="ammu">
+        Kerala is a state in the Republic of India. It is in the south-west of the country. The west coast of the state is on the Arabian Sea. Tamil Nadu and Karnataka are to the east.
+
+The capital city of the state is Thiruvananthapuram, even though the city of Kochi is more densely populated. The most famous festivals held by Keralites are Onam, the harvest festival and Vishu, the Malayalam Calendar New Year. In addition to these, temples as well as churches hold festivals in several days of the year. A common tradition in all these festivals is the hosting of the holy flag, which is brought down on the last day of the festival. Some temple festivals are called poorams, and the most famous one among these is 'Thrissur Pooram'. The main attractions of poorams are firecrackers, traditional dance forms like 'Theyyam, Kathakali, Chakyar Koothu etc.'. Festivals are locally known as utsavams .
+    </p>
+    <a href="Kerala.html" target="_blank" title="Kerala" class="mir4">Kerala</a>
+</div>
+<div class="mp">
+    <video controls autoplay muted height="350" width="900"vclass="mp">
+    <source src="vedio.mp4" type="video/mp4">
+    </video>
+</div>
+<h1 class="rem">“Remember that happiness is a way of travel – not a destination.”</h1>
+
+</body>
+</html>
